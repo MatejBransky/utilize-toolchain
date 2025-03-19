@@ -1,0 +1,42 @@
+{
+	"private": true,
+	"name": "utilize-toolchain",
+	"version": "1.0.0",
+	"description": "Linting, formatting, and more",
+	"keywords": [
+		"eslint",
+		"prettier",
+		"formatting",
+		"linting",
+		"toolchain"
+	],
+	"author": {
+		"name": "Matej Bransky",
+		"email": "matej.bransky@gmail.com"
+	},
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"check:types": "pnpm run --recursive --parallel --if-present check:types",
+		"check:format": "pnpm run --recursive --parallel --if-present check:format",
+		"format": "pnpm run --recursive --parallel --if-present format",
+		"lint": "eslint . --no-error-on-unmatched-pattern && pnpm run --recursive --parallel --if-present lint",
+		"lint:fix": "eslint . --fix --no-error-on-unmatched-pattern && pnpm run --recursive --parallel --if-present lint:fix",
+		"ci:version": "pnpm changeset version",
+		"ci:publish": "pnpm changeset publish"
+	},
+	"engines": {
+		"node": ">=22",
+		"pnpm": ">=10"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@changesets/cli": "^2.28.1",
+		"@eslint/js": "^9.22.0",
+		"@utilize/eslint-config": "workspace:*",
+		"@utilize/prettier-config": "workspace:*",
+		"eslint": "^9.21.0",
+		"globals": "^15.15.0",
+		"typescript-eslint": "^8.24.1"
+	},
+	"prettier": "@utilize/prettier-config"
+}

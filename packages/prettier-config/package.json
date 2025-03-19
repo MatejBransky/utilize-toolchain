@@ -1,0 +1,27 @@
+{
+	"name": "@utilize/prettier-config",
+	"description": "Default Prettier config",
+	"version": "1.1.1",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:MatejBransky/utilize.git",
+		"directory": "packages/prettier-config"
+	},
+	"author": "Matej Bransky",
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"main": "prettier.json",
+	"scripts": {
+		"check:format": "prettier --check .",
+		"format": "prettier --check --write ."
+	},
+	"peerDependencies": {
+		"prettier": "*"
+	},
+	"devDependencies": {
+		"prettier": "3.5.3"
+	},
+	"prettier": "./prettier.json"
+}
