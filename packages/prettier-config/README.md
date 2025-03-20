@@ -22,6 +22,6 @@ pnpm add prettier @utilize/prettier-config
 
 ```json
 {
- "prettier": "@utilize/prettier-config"
+	"prettier": "@utilize/prettier-config"
 }
 ```

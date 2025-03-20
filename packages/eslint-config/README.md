@@ -25,7 +25,7 @@ import utilizeConfig from '@utilize/eslint-config/{node,react}';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
- ...utilizeConfig,
- // your config
+	...utilizeConfig,
+	// your config
 ];
 ```
