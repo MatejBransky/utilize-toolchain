@@ -36,7 +36,7 @@
 		"@utilize/prettier-config": "workspace:*",
 		"eslint": "^9.21.0",
 		"globals": "^15.15.0",
-		"typescript-eslint": "^8.24.1"
+		"typescript-eslint": "^8.27.0"
 	},
 	"prettier": "@utilize/prettier-config"
 }
