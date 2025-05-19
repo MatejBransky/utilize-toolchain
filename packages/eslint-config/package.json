@@ -4,7 +4,7 @@
 	"version": "3.0.0-alpha.0",
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:MatejBransky/utilize.git",
+		"url": "git@github.com:MatejBransky/utilize-toolchain.git",
 		"directory": "packages/eslint-config"
 	},
 	"author": {
@@ -16,6 +16,7 @@
 		"access": "public"
 	},
 	"exports": {
+		".": "./react.mjs",
 		"./base": "./base.mjs",
 		"./node": "./node.mjs",
 		"./react": "./react.mjs"
