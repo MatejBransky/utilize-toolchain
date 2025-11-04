@@ -1,5 +1,11 @@
 # @utilize/eslint-config
 
+## 3.0.2
+
+### Patch Changes
+
+- 9ae3e7f: fixed exports field in package.json
+
 ## 3.0.1
 
 ### Patch Changes
