@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Checkout code repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Cache pnpm modules
         # Cache depends on number of dependencies in project
