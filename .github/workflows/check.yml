@@ -27,7 +27,7 @@ jobs:
         # - For big projects (> 100 deps), cache brings good speed advantages
         # Measurement results:
         # https://github.com/actions/setup-node/issues/271#issuecomment-871408337
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.pnpm-store
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
