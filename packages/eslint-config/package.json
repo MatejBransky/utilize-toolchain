@@ -28,7 +28,7 @@
 		"lint:fix": "pnpm lint --fix"
 	},
 	"dependencies": {
-		"@eslint/js": "^9.22.0",
+		"@eslint/js": "^10.0.0",
 		"eslint-config-prettier": "^10.1.1",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-jsx-a11y": "^6.10.2",
@@ -45,7 +45,7 @@
 	},
 	"devDependencies": {
 		"@utilize/prettier-config": "workspace:*",
-		"eslint": "^9.22.0",
+		"eslint": "^10.0.0",
 		"prettier": "3.5.3"
 	},
 	"prettier": "@utilize/prettier-config"
